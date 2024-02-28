@@ -15,3 +15,6 @@ client/build
 
 # misc
 .DS_Store
+
+# venv
+server/.venv
