@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background-gradient {
+    background: radial-gradient(
+        circle at top center,
+        hsla(30, 100%, 47%, 0.9) 4%,
+        hsla(0, 0%, 0%, 1) 30%,
+        /* Default style */ hsla(0, 0%, 0%, 1) 100%
+    );
+}
+
+@screen md {
+    .background-gradient {
+        background: radial-gradient(
+            circle at top center,
+            hsla(30, 100%, 47%, 0.9) 1%,
+            hsla(0, 0%, 0%, 1) 30%,
+            /* Style for md screens */ hsla(0, 0%, 0%, 1) 100%
+        );
+    }
+}
